@@ -1,5 +1,3 @@
-pom.xml
-pom.xml.asc
 *.jar
 *.class
 /lib/
@@ -12,3 +10,7 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+.cljs_node_repl/
+.clj-kondo/
+.calva/
+.lsp/
