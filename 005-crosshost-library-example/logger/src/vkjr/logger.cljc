@@ -1,7 +1,7 @@
 (ns vkjr.logger
   (:require [clojure.pprint :as pprint]))
 
-(defn timestamp []
+(defn- timestamp []
   #?(:clj
      (.format (java.text.SimpleDateFormat. "d/M/yyyy, HH:mm:ss") (new java.util.Date))
      :cljs
@@ -17,6 +17,5 @@
                     arg))
 
 (comment
-
   (read-string {:read-cond :allow} "(#?@(:clj [\"Clojure\"]
                         :cljs [\"ClojureScript\"]))"))
